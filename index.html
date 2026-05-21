@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Loops&Funcrions</h1>
+    <script>
+      // Loops
+      for (let i = 0; i < 100; i++) {
+        console.log("Ali");
+      }
+      for (let i = 0; i < 5; i++) {
+        console.log("Ahmed");
+      }
+      for (let i = 1; i <= 200; i = i + 2) {
+        console.log(i);
+      }
+
+      let age = prompt("Enter your age");
+      console.log(typeof age);
+      age = Number(age);
+      console.log(typeof age);
+
+      while (age <= 0) {
+        age = prompt("Enter your age");
+        age = Number(age);
+      }
+      console.log("Your age is " + age);
+
+      //Guessing game
+      let systemword = "javascript";
+      let userword = prompt("Enter the word");
+
+      while (userword !== systemword) {
+        userword = prompt("Wrong!! try againn");
+      }
+      console.log("Correct!!");
+      //Functions
+    </script>
+  </body>
+</html>
